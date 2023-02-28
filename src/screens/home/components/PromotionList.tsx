@@ -12,7 +12,9 @@ const PROMOTION_WIDTH = 0.6 * CONSTANTS.SCREEN.WIDTH;
 type PromotionProps = {
   data: Promotion;
 };
-
+/**
+ * @todo Based on my experience, I should use `react-native-render-html` but I use React Native Component for quick demo.
+ */
 const PromotionItem: React.FunctionComponent<PromotionProps> = props => {
   return (
     <View style={styles.wrapper}>
@@ -78,6 +80,9 @@ type PromotionListProps = {
   data: Promotion[];
 };
 
+/**
+ * @todo Should use `SectionList` for instead. Just use `Flatlist` to make quick demo.
+ */
 const PromotionList: React.FunctionComponent<PromotionListProps> = props => {
   const renderPromotion: FlatListProps<Promotion>['renderItem'] = ({
     item,
