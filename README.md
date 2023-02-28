@@ -3,7 +3,9 @@
 First round assignment for Tech company.
 
 **Author**: Dat Nguyen
+
 **Submition Date**: Feb 28th, 2023
+
 **Duration**:
 | Time | Commit |
 | --- | --- |
