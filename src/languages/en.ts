@@ -11,6 +11,10 @@ const EN = {
 
     view_benefits_button: 'View tier benefits',
     view_my_coupon: 'My Coupons',
+
+    petrol: 'Petrol',
+    rentalRebate: 'Rental Rebate',
+    foodAndBeverage: 'Food and Beverage',
   },
 };
 export default EN;

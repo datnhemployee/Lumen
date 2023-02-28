@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   wrapper: {
     padding: PADDING,
     borderRadius: PADDING + ICON_SIZE,
-    backgroundColor: COLOR.BACKGROUND,
+    backgroundColor: COLOR.WHITE,
   },
   icon: {
     height: ICON_SIZE,

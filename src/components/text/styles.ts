@@ -23,6 +23,9 @@ const styles = StyleSheet.create({
   'title1-light': {
     color: COLOR.TEXT_WHITE,
   },
+  'title2-dark': {
+    color: COLOR.PRIMARY,
+  },
   'title3-dark': {
     color: COLOR.TEXT_GREY_1,
   },

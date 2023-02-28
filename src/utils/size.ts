@@ -5,6 +5,7 @@ const DELTA = 1;
 const SIZE_NAME_LIST: string[] = [
   'ICON_MEDIUM',
   'ICON_LARGE',
+  'PROMOTION_HEIGHT',
 
   'SPACE_TINY',
   'SPACE_SMALL',

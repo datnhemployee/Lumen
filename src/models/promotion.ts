@@ -4,7 +4,7 @@ type Promotion = {
   image: ImageProps['source'];
   title: string;
   message: string;
-  submessage: string;
+  subMessage?: string;
 };
 
 export type {Promotion};

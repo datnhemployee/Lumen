@@ -7,5 +7,8 @@ const styles = StyleSheet.create({
     height: SIZE.SPACE_LARGE,
     backgroundColor: COLOR.SECONDARY,
   },
+  footer: {
+    height: SIZE.SPACE_SMALL,
+  },
 });
 export default styles;

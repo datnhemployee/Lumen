@@ -100,7 +100,7 @@ const cardStyles = StyleSheet.create({
   },
   background: {...StyleSheet.absoluteFillObject},
   backgroundTop: {flex: 1, backgroundColor: COLOR.SECONDARY},
-  backgroundBottom: {flex: 1, backgroundColor: COLOR.THIRD},
+  backgroundBottom: {flex: 1, backgroundColor: COLOR.BACKGROUND},
   content: {
     ...StyleSheet.absoluteFillObject,
     marginHorizontal: SIZE.SPACE_MEDIUM,
