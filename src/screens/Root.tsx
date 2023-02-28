@@ -1,14 +1,15 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
 import TabNavigator from '../navigation/TabNavigator';
+import StatusBar from '../components/statusBar';
 
 type RootProps = {};
 
 const Root: React.FunctionComponent<RootProps> = () => {
   return (
-    <NavigationContainer>
+    <>
       <TabNavigator />
-    </NavigationContainer>
+      <StatusBar />
+    </>
   );
 };
 export default Root;

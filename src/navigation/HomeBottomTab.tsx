@@ -9,7 +9,10 @@ const HomeBottomTab: React.FunctionComponent<BottomTabBarProps> = props => {
   return (
     <View style={styles.wrapper}>
       {props.state.routes.map((route, index) => (
-        <HomeBottomIcon {...{...props, route, index}} />
+        <HomeBottomIcon
+          key={`${route.name}-icon`}
+          {...{...props, route, index}}
+        />
       ))}
     </View>
   );

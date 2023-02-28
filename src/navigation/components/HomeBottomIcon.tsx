@@ -7,6 +7,7 @@ import Icon from '../../components/image/Icon';
 import SIZE from '../../utils/size';
 import {StyleSheet, View} from 'react-native';
 import NotificationDot from '../../components/dot/NotificationDot';
+import COLOR from '../../utils/color';
 
 const getIcon = (route: {name: string}) => {
   switch (route?.name) {
@@ -45,7 +46,7 @@ const HomeBottomIcon: React.FunctionComponent<HomeBottomIconProps> = props => {
 
     if (isFocused || event.defaultPrevented) return;
 
-    navigation.navigate(route.name, {merge: true});
+    navigation.navigate(route.name);
   };
 
   const onLongPress = () => {
@@ -61,7 +62,11 @@ const HomeBottomIcon: React.FunctionComponent<HomeBottomIconProps> = props => {
       disabled={isFocused}
       onPress={onPress}
       onLongPress={onLongPress}>
-      <Icon source={getIcon(route)} size={SIZE.ICON_LARGE} />
+      <Icon
+        source={getIcon(route)}
+        size={SIZE.ICON_LARGE}
+        style={isFocused ? styles.iconFocus : styles.iconBlur}
+      />
 
       {route.name === NAVIGATION.NOTIFICATION_STACK && (
         <View style={styles.notificationDot}>
@@ -82,6 +87,12 @@ const styles = StyleSheet.create({
     right: 0,
     marginRight: SIZE.DOT / 2,
     marginTops: SIZE.DOT / 2,
+  },
+  iconFocus: {
+    tintColor: COLOR.PRIMARY,
+  },
+  iconBlur: {
+    tintColor: COLOR.BORDER,
   },
 });
 
