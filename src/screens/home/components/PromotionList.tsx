@@ -90,7 +90,13 @@ const PromotionList: React.FunctionComponent<PromotionListProps> = props => {
     </>
   );
 
-  return <List data={props.data} renderItem={renderPromotion} />;
+  return (
+    <List
+      data={props.data}
+      renderItem={renderPromotion}
+      keyExtractor={item => item?.key}
+    />
+  );
 };
 
 const stylesList = StyleSheet.create({
