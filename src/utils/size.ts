@@ -17,6 +17,9 @@ const SIZE_NAME_LIST: string[] = [
   'RADIUS_BAR',
   'RADIUS_BUTTON',
   'RADIUS_CARD',
+
+  'BORDER',
+  'DOT',
 ];
 
 type Size = {[k: string]: number};

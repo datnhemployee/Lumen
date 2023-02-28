@@ -12,6 +12,9 @@ const SIZE = {
   RADIUS_BAR: 4,
   RADIUS_BUTTON: 4,
   RADIUS_CARD: 8,
+
+  DOT: 12,
+  BORDER: 1,
 };
 
 const COLOR = {

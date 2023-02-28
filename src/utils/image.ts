@@ -1,6 +1,10 @@
 const IMAGE = {
   CHEVRON_LEFT: require('../assets/images/chevron-left.png'),
   CHEVRON_RIGHT: require('../assets/images/chevron-right.png'),
+  HOME: require('../assets/images/home.png'),
+  ACCOUNT: require('../assets/images/account.png'),
+  CARD: require('../assets/images/card.png'),
+  NOTIFICATION: require('../assets/images/notification.png'),
 
   // mocks
   PETROL_1: require('../assets/images/petrol1.png'),

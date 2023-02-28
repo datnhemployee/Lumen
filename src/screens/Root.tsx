@@ -1,8 +1,14 @@
 import React from 'react';
-import HomeScreen from './home';
+import {NavigationContainer} from '@react-navigation/native';
+import TabNavigator from '../navigation/TabNavigator';
+
 type RootProps = {};
 
 const Root: React.FunctionComponent<RootProps> = () => {
-  return <HomeScreen />;
+  return (
+    <NavigationContainer>
+      <TabNavigator />
+    </NavigationContainer>
+  );
 };
 export default Root;

@@ -1,18 +1,19 @@
 import React from 'react';
-import {Image, ImageStyle, StyleProp} from 'react-native';
+import {Image, ImageProps, ImageStyle, StyleProp} from 'react-native';
 import IMAGE from '../../utils/image';
 import SIZE from '../../utils/size';
 
 type IconProps = {
-  name: keyof typeof IMAGE;
+  name?: keyof typeof IMAGE;
+  source?: ImageProps['source'];
   size?: number;
   style?: StyleProp<ImageStyle>;
-};
+} & ({} | {});
 
 const Icon: React.FunctionComponent<IconProps> = props => (
   <Image
     {...props}
-    source={IMAGE[props.name]}
+    source={props?.source ?? IMAGE[props?.name as keyof typeof IMAGE]}
     style={[
       {
         height: props.size,
