@@ -1,0 +1,44 @@
+const SIZE = {
+  ICON_MEDIUM: 24,
+  ICON_LARGE: 40,
+
+  SPACE_TINY: 8,
+  SPACE_SMALL: 16,
+  SPACE_MEDIUM: 24,
+  SPACE_LARGE: 32,
+
+  BAR: 4,
+  RADIUS_BAR: 4,
+  RADIUS_BUTTON: 4,
+  RADIUS_CARD: 8,
+};
+
+const COLOR = {
+  PRIMARY: '#0062FF',
+  SECONDARY: '#171725',
+  THIRD: '#FAFAFB',
+
+  BACKGROUND: '#E5E5E5',
+  WHITE: '#FFFFFF',
+
+  BAR_DEFAULT: '#E2E2EA',
+
+  BORDER: '#D5D5DC',
+  WARNING: '#FC5A5A',
+
+  TEXT_GREY_1: '#B5B5BE',
+  TEXT_GREY_2: '#92929D',
+  TEXT_WHITE: '#FFFFFF',
+  TEXT_DARK: '#171725',
+};
+
+const OPACITY = {
+  TOUCH: 0.8,
+};
+
+const DEFAULT_THEME = {
+  SIZE,
+  COLOR,
+  OPACITY,
+};
+export default DEFAULT_THEME;
