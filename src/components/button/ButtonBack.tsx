@@ -33,11 +33,13 @@ type ButtonBackTopLeftProps = ButtonBackProps & {
 const ButtonBackTopLeft = ({
   topLeftStyle,
   ...buttonBackProps
-}: ButtonBackTopLeftProps) => (
-  <View style={[styles.topLeftWrapper, topLeftStyle]}>
-    <ButtonBack {...buttonBackProps} />
-  </View>
-);
+}: ButtonBackTopLeftProps) => {
+  return (
+    <View style={[styles.topLeftWrapper, topLeftStyle]}>
+      <ButtonBack {...buttonBackProps} />
+    </View>
+  );
+};
 
 const SpaceTopLeftButtonBack = () => <View style={styles.topLeftSpace} />;
 
@@ -55,7 +57,6 @@ const styles = StyleSheet.create({
 
   topLeftWrapper: {
     position: 'absolute',
-    top: 0,
     left: 0,
     marginTop: MARGIN_TOP,
     marginLeft: SIZE.SPACE_MEDIUM,

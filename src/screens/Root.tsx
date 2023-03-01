@@ -7,9 +7,10 @@ type RootProps = {};
 const Root: React.FunctionComponent<RootProps> = () => {
   return (
     <>
-      <TabNavigator />
       <StatusBar />
+      <TabNavigator />
     </>
   );
 };
+
 export default Root;

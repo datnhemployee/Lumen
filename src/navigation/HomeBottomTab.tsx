@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: SIZE.SPACE_MEDIUM,
     borderTopWidh: SIZE.BORDER,
     borderColor: COLOR.BORDER,
+    backgroundColor: COLOR.WHITE,
   },
 });
 export default HomeBottomTab;

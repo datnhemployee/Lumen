@@ -1,15 +1,37 @@
-import React, {useEffect} from 'react';
-import {StatusBar as RnStatusBar} from 'react-native';
+import React from 'react';
+import {
+  SafeAreaView,
+  StatusBar as RnStatusBar,
+  StatusBarProps as RnStatusBarProps,
+  StyleSheet,
+  View,
+} from 'react-native';
 import COLOR from '../../utils/color';
 
-type StatusBarProps = {};
+type StatusBarProps = RnStatusBarProps;
 
-const StatusBar: React.FunctionComponent<StatusBarProps> = () => {
-  useEffect(() => {
-    RnStatusBar.setBackgroundColor(COLOR.SECONDARY);
-    RnStatusBar.setBarStyle('light-content');
-  }, []);
+const BACKGROUND_COLOR = COLOR.SECONDARY;
 
-  return <RnStatusBar />;
+const StatusBar: React.FunctionComponent<StatusBarProps> = props => {
+  return (
+    <View style={styles.wrapper}>
+      <SafeAreaView>
+        <RnStatusBar
+          translucent
+          backgroundColor={BACKGROUND_COLOR}
+          barStyle="light-content"
+          {...props}
+        />
+      </SafeAreaView>
+    </View>
+  );
 };
+
+const styles = StyleSheet.create({
+  wrapper: {
+    height: RnStatusBar.currentHeight,
+    backgroundColor: BACKGROUND_COLOR,
+  },
+});
+
 export default StatusBar;
