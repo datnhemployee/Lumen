@@ -7,6 +7,7 @@ import ProgressBar from '../../../components/progress/ProgressBar';
 import Text from '../../../components/text';
 import LANGUAGE from '../../../languages';
 import COLOR from '../../../utils/color';
+import SHADOW from '../../../utils/shadow';
 import SIZE from '../../../utils/size';
 type MemberShipContentProps = {};
 
@@ -106,6 +107,7 @@ const cardStyles = StyleSheet.create({
     marginHorizontal: SIZE.SPACE_MEDIUM,
     borderRadius: SIZE.RADIUS_CARD,
     overflow: 'hidden',
+    ...SHADOW,
   },
 });
 

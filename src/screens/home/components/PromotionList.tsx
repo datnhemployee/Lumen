@@ -6,6 +6,7 @@ import {Promotion} from '../../../models/promotion';
 import COLOR from '../../../utils/color';
 import Text from '../../../components/text';
 import CONSTANTS from '../../../utils/constants';
+import SHADOW from '../../../utils/shadow';
 
 const PROMOTION_WIDTH = 0.6 * CONSTANTS.SCREEN.WIDTH;
 
@@ -55,6 +56,7 @@ const styles = StyleSheet.create({
     width: PROMOTION_WIDTH,
     overflow: 'hidden',
     marginBottom: SIZE.SPACE_MEDIUM,
+    ...SHADOW,
   },
 
   image: {
