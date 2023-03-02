@@ -30,6 +30,6 @@ First round assignment for Tech company.
 - **src/theme**: includes default theme.
 - **src/utils**: includes constants, size, fonts, colors, images, etc.
 
-**screen record**: I lost the screen record because the lack of knowledge of PowerPoint recording screen limitation.
+**screen record**: [Google Drive](https://drive.google.com/file/d/1Ut_CO2EJu8PKbtp4dqy4ih_nMFdukUvn/view?usp=share_link).
 
 Please let me known via oodatnhoemployeeoo@gmail.com if it occurs to give me a chance to impress you in an interview.
