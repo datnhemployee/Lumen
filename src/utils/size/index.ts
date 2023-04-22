@@ -1,5 +1,5 @@
 import DEFAULT_THEME from '../../theme/default';
-import {ArrayElement} from '../../types';
+import getSizeVal from './getSizeVal';
 
 const DEFAULT_SIZE = 0.01;
 const DELTA = 1;
@@ -25,21 +25,6 @@ const SIZE_NAME_LIST: string[] = [
 ];
 
 type Size = {[k: string]: number};
-
-const getSizeVal = (
-  size: Size,
-  sizeName: ArrayElement<typeof SIZE_NAME_LIST>,
-  opts?: {parseNum?: boolean},
-) => {
-  if (!opts?.parseNum) {
-    return size[sizeName];
-  }
-  const numSize =
-    !size[sizeName] || size[sizeName] < DEFAULT_SIZE
-      ? DEFAULT_SIZE
-      : size[sizeName];
-  return numSize;
-};
 
 const toSizeWithDelta = (size: Size, delta = DELTA): Size =>
   SIZE_NAME_LIST.reduce((sizeWithDelta, sizeName) => {

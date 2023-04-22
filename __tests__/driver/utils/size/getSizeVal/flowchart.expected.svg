@@ -1,0 +1,312 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                width="824" height="696" shape-rendering="optimizeSpeed">
+                
+            <g>
+                <rect x="50" y="80"
+            width="227.2" height="30"
+            style="fill:#fff; stroke:#444; stroke-width:1" />
+                    
+                <line x1="55" y1="80" x2="55" y2="110"
+                style="fill:#fff; stroke:#444; stroke-width:1" />
+                <line x1="272.2" y1="80" x2="272.2" y2="110"
+                style="fill:#fff; stroke:#444; stroke-width:1" />
+             
+                <title>import from&apos;./constants&apos;</title>
+            <text x="70" y="100"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="70" y="100">import from&apos;./constants&apos;</tspan>
+            </text>
+                
+            </g>
+                <g>
+                   <rect x="87" y="128.5"
+            width="123.6" height="30"
+            rx="2" ry="2"
+            style="fill:#81d4fa; stroke:#444; stroke-width:1" />
+                   <title>DEFAULT_SIZE</title>
+            <text x="102" y="148.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="148.5">DEFAULT_SIZE</tspan>
+            </text>
+                   
+                   
+                </g>
+            <g>
+                <rect x="50" y="192"
+            width="346.4" height="30"
+            style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                    
+                <line x1="60" y1="192" x2="60" y2="222"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                <line x1="386.4" y1="192" x2="386.4" y2="222"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+             
+                <title>getSizeVal = (size, sizeName, opts) =&gt;</title>
+            <text x="75" y="212"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="75" y="212">getSizeVal = (size, sizeName, opts) =&gt;</tspan>
+            </text>
+                
+            </g>
+                <g>
+                   <rect x="87" y="240.5"
+            width="326.4" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>const mappedSizeValue = size[sizeName]</title>
+            <text x="102" y="260.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="260.5">const mappedSizeValue = size[sizeName]</tspan>
+            </text>
+                   
+                   
+                </g><g>
+            <rect x="117" y="304"
+            width="348.59999999999997" height="30"
+            rx="3" ry="3"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />                
+            <polygon points="87,319 117,289 147,319 117,349"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />
+            <title>(!!opts &amp;&amp; !!opts.isParseNumRequired)</title>
+            <text x="162" y="324"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="162" y="324">(!!opts &amp;&amp; !!opts.isParseNumRequired)</tspan>
+            </text>
+            
+            <text x="109.2" y="324"
+        font-family="monospace" font-size="13" fill="#222">if</text> <text x="124.8" y="350.95"
+        font-family="monospace" font-size="13" fill="#222">+</text> 
+        </g>
+                <g>
+                   <rect x="137" y="359"
+            width="209.4" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>const parseNumResult = </title>
+            <text x="152" y="379"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="152" y="379">const parseNumResult = </tspan>
+            </text>
+                   
+                   
+                </g><g>
+            <rect x="204" y="422.5"
+            width="411" height="30"
+            rx="3" ry="3"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />                
+            <polygon points="174,437.5 204,407.5 234,437.5 204,467.5"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />
+            <title>(parseFloat(mappedSizeValue) &gt;= DEFAULT_SIZE)</title>
+            <text x="249" y="442.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="249" y="442.5">(parseFloat(mappedSizeValue) &gt;= DEFAULT_SIZE)</tspan>
+            </text>
+            
+            <text x="200.1" y="442.5"
+        font-family="monospace" font-size="13" fill="#222">?</text> <text x="211.8" y="469.45"
+        font-family="monospace" font-size="13" fill="#222">+</text> <text x="618.9" y="435.55"
+        font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+                <g>
+                   <rect x="224" y="477.5"
+            width="147" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>mappedSizeValue</title>
+            <text x="239" y="497.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="239" y="497.5">mappedSizeValue</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="675" y="477.5"
+            width="123.6" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>DEFAULT_SIZE</title>
+            <text x="690" y="497.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="690" y="497.5">DEFAULT_SIZE</tspan>
+            </text>
+                   
+                   
+                </g>
+            <g>
+                <rect x="137" y="527.5"
+            width="193.79999999999998" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="330.79999999999995" y1="537.5" x2="335.79999999999995" y2="537.5"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="330.79999999999995" y1="547.5" x2="335.79999999999995" y2="547.5"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M335.79999999999995, 531.5 L351.79999999999995, 542.5 L335.79999999999995, 553.5 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return parseNumResult</title>
+            <text x="152" y="547.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="152" y="547.5">return parseNumResult</tspan>
+            </text>
+                
+            </g>
+            <g>
+                <rect x="87" y="577.5"
+            width="201.6" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="288.6" y1="587.5" x2="293.6" y2="587.5"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="288.6" y1="597.5" x2="293.6" y2="597.5"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M293.6, 581.5 L309.6, 592.5 L293.6, 603.5 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return mappedSizeValue</title>
+            <text x="102" y="597.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="597.5">return mappedSizeValue</tspan>
+            </text>
+                
+            </g>
+            <g>
+                <rect x="50" y="641"
+            width="232.79999999999995" height="30"
+            rx="3" ry="3"
+            style="fill:#81d4fa; stroke:#444; stroke-width:1" />
+                
+                <line x1="282.79999999999995" y1="651" x2="287.79999999999995" y2="651"
+                style="fill:#fff; stroke:#444; stroke-width:1" />
+                
+                <line x1="282.79999999999995" y1="661" x2="287.79999999999995" y2="661"
+                style="fill:#fff; stroke:#444; stroke-width:1" />
+
+                <path d="M287.79999999999995, 642 L307.79999999999995, 656 L287.79999999999995, 670 Z" 
+        fill="#fff" stroke="#444" stroke-width="1" />
+                             
+                <title>export default  getSizeVal</title>
+            <text x="65" y="661"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="65" y="661">export default  getSizeVal</tspan>
+            </text>
+                
+            </g>
+            <g>
+               <rect x="25" y="13.75"
+            width="216.6" height="24"
+            style="fill:#fff59d; stroke:#444; stroke-width:1" />
+               <circle cx="25" cy="25" r="15"
+        style="fill:#fff59d; stroke:#444; stroke-width:1" />
+               <title>Program: source module</title>
+            <text x="55" y="30"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="55" y="30">Program: source module</tspan>
+            </text>
+            </g>
+            <g>
+               <path d="M25, 40 L25 91 Q25 95
+                29 95
+                L42 95 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M42, 92 L50, 95 L42, 98 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 139.5 Q68.5 143.5
+                72.5 143.5
+                L87 143.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               false
+            </g>
+            <g>
+               <path d="M25, 40 L25 203 Q25 207
+                29 207
+                L42 207 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M42, 204 L50, 207 L42, 210 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 222 L68.5 251.5 Q68.5 255.5
+                72.5 255.5
+                L79 255.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 252.5 L87, 255.5 L79, 258.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 222 L68.5 315 Q68.5 319
+                72.5 319
+                L79 319 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 316 L87, 319 L79, 322 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M117, 349 L117 370 Q117 374
+                121 374
+                L129 374 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M129, 371 L137, 374 L129, 377 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M155.5, 389 L155.5 433.5 Q155.5 437.5
+                159.5 437.5
+                L166 437.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M166, 434.5 L174, 437.5 L166, 440.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M204, 467.5 L204 488.5 Q204 492.5
+                208 492.5
+                L216 492.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M216, 489.5 L224, 492.5 L216, 495.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M615, 437.5 L651 437.5  Q655 437.5
+                655 441.5
+                L655 484.5 Q655 492.5
+                659 492.5
+                L667 492.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M667, 489.5 L675, 492.5 L667, 495.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M117, 349 L117 538.5 Q117 542.5
+                121 542.5
+                L129 542.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M129, 539.5 L137, 542.5 L129, 545.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 222 L68.5 588.5 Q68.5 592.5
+                72.5 592.5
+                L79 592.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 589.5 L87, 592.5 L79, 595.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M25, 40 L25 652 Q25 656
+                29 656
+                L42 656 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M42, 653 L50, 656 L42, 659 Z" 
+        fill="#333" />
+            </g>
+            </svg>

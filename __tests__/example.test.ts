@@ -2,7 +2,9 @@ import SIZE, {DEFAULT_SIZE, toSizeWithDelta} from '.';
 
 /**
  * Stub (Jest.fn) vs Spy (Jest.SpyOn)
- * Ref: https://codewithhugo.com/jest-fn-spyon-stub-mock/
+ * Ref:
+ * - https://codewithhugo.com/jest-fn-spyon-stub-mock/
+ * - https://stackoverflow.com/questions/32075861/difference-between-drivers-and-stubs-in-tdd
  */
 // const myObj = {
 //   doSomething() {
@@ -61,8 +63,3 @@ describe('toSizeWithDelta', () => {
     expect(resultSize).toEqual(EMPTY_SIZE);
   });
 });
-
-/**
- * Black-box testing: Functional testing
- * White-box testing: Functional testing
- */

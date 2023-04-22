@@ -1,38 +1,32 @@
 import type {Config} from 'jest';
-import Log from './src/utils/log';
-import ArgvResolver from './__tests__/jest/ArgvResolver';
-import DummySuit from './__tests__/jest/DummySuit';
+import Argv from './__tests__/Base/Argv';
+import Controller from './__tests__/Base/Controller';
 
-const CURRENT_REPORT = (() => {
-  const hasNoSuit = !ArgvResolver.checkRequired([ArgvResolver.NAME.SUIT]);
-  if (hasNoSuit) {
-    Log.infoWithColor(
-      Log.COLOR.ERROR,
-      `\nError: Option ${ArgvResolver.NAME.SUIT} is required to test.`,
-      `\n       Please try again and include this option.`,
-      '\n',
-    );
-    return new DummySuit();
-  }
-
-  const argSuit = ArgvResolver.select(ArgvResolver.NAME.SUIT);
-  switch (argSuit?.value) {
-    case 'size':
-      return require('./__tests__/suit/utils/size/suit').default;
-
-    case 'setup':
-      return require('./__tests__/suit/setup/suit').default;
-
-    default:
-      return new DummySuit();
-  }
-})();
-
-const config: Config = {
-  preset: 'react-native',
-  verbose: false,
-  notify: true,
-  ...(CURRENT_REPORT.toPartialConfig?.() ?? {}),
+const ARGV = {
+  NAME: '--name',
 };
 
-export default config;
+const toConfig = async (): Promise<Config> => {
+  const name = Argv.select(ARGV.NAME, {isRequired: true});
+
+  switch (name) {
+    case 'size/getSizeVal':
+      const {
+        default: getSizeValSpec,
+      } = require('./__tests__/driver/utils/size/getSizeVal/index.ts');
+
+      const config = Controller.toConfigWithHtmlReporter(
+        Controller.toConfigWithTestMatch(
+          Controller.DEFAULT_CONFIG,
+          getSizeValSpec.testmatch,
+        ),
+        getSizeValSpec.reporter,
+      );
+
+      return config;
+    default:
+      throw new Error(`Unable to resolve config with name '${name}'`);
+  }
+};
+
+export default toConfig;

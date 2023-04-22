@@ -1,0 +1,6 @@
+{
+  "driver": {
+    "size-getSizeVal": "/Users/datnguyen/Desktop/MyMac/Others/Workplace/react-native/Lumen/__tests__/driver/utils/size/getSizeVal",
+    "size-toSizeWithDelta": "/Users/datnguyen/Desktop/MyMac/Others/Workplace/react-native/Lumen/__tests__/driver/utils/size/toSizeWithDelta"
+  }
+}
