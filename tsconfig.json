@@ -10,9 +10,9 @@
     "noEmit": true,
     "strict": true,
     "target": "esnext",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "utils/*": ["utils/*"]
+      "utils/*": ["src/utils/*"]
     }
   }
   // "exclude": ["node_modules"],
